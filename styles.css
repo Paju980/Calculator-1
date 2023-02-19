@@ -1,0 +1,77 @@
+body{
+    background: #1939f6;
+    text-align: center;
+}
+.main-container{
+    padding: 4px 0 4px 4px;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 70px;
+}
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background: black;
+    gap: 1px 1px;
+}
+.grid-item {
+    background-color: #1e2022;
+    color: white;
+    padding: 40px;
+    font-size: 1.5rem;
+}
+
+.screen{
+    grid-area: 1 / 1 / span 5 / span 4;
+    margin-right: 4px;
+    display: flex;
+    padding:5px 5px 5px 5px;
+}
+
+.operators{
+    grid-template-columns: auto;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    padding: 0;
+    background: #000;
+}
+.operands{
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 0;
+    background: #000;
+}
+.btn1{
+    padding: 20px;
+    background-color: #1939f6;
+}
+.btn2{
+    padding:10px;
+}
+.equal-to{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    /* background-color: #1939f6; */
+}
+.bg-org{
+    background: orange;
+}
+input{
+    background: #000;
+    border: none;
+    /* width: 100%; */
+    /* height: 100%; */
+    align-items: flex-bottom;
+    color: white;
+    padding: 45px 55px;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: orangered;
+}
